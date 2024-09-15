@@ -45,11 +45,19 @@ console.log(string3.toLowerCase());
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
-let str =  ' dirty string   ';
-console.log(str);
-console.log(str.indexOf('d'));
-console.log(str.indexOf('g'));
-console.log(str.substring(1,12));
+let str = ' dirty string   ';
+let s = str.trim();
+console.log(s);
+console.log(str.length);
+console.log(s.length);
+
+
+
+// let str =  ' dirty string   ';
+// console.log(str);
+// console.log(str.indexOf('d'));
+// console.log(str.indexOf('g'));
+// console.log(str.substring(1,12));
 
 // - Напишіть функцію stringToArray(str), яка перетворює рядок на масив слів.
     // let str = 'Ревуть воли як ясла повні';
@@ -67,9 +75,10 @@ const numbers = [10,8,-7,55,987,-1011,0,1050,0];
 const strings = numbers.map(number => number + '');
 console.log(strings);
 
-// const array = [1,2,3,4,-5,6,-7,8,9];
-// const newArr = array.map(number => number + '');
-// console.log(newArr);
+// Це для закріплення, як варіант
+const array = [1,2,3,4,-5,6,-7,8,9];
+const newArr = array.map(number => number.toString());
+console.log(newArr);
 
 
 
