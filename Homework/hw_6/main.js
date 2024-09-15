@@ -45,7 +45,7 @@ console.log(string3.toLowerCase());
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
-let str = '_dirty string___';
+let str =  ' dirty string   ';
 console.log(str);
 console.log(str.indexOf('d'));
 console.log(str.indexOf('g'));
@@ -63,18 +63,28 @@ console.log(stringToArray);
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] .
 //     за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
 
-let map = new Map ();
-console.log(map);
-map.set(10,'10');
-map.set(8,'8');
-map.set(-7,'-7');
-map.set(55,'55');
-map.set(987,'987');
-map.set(-1011,'-1011');
-map.set(0,'0');
-map.set(1050,'1050');
-map.set(0,'0');
-console.log(map);
+const numbers = [10,8,-7,55,987,-1011,0,1050,0];
+const strings = numbers.map(number => number + '');
+console.log(strings);
+
+// const array = [1,2,3,4,-5,6,-7,8,9];
+// const newArr = array.map(number => number + '');
+// console.log(newArr);
+
+
+
+// let map = new Map ();
+// console.log(map);
+// map.set(10,'10');
+// map.set(8,'8');
+// map.set(-7,'-7');
+// map.set(55,'55');
+// map.set(987,'987');
+// map.set(-1011,'-1011');
+// map.set(0,'0');
+// map.set(1050,'1050');
+// map.set(0,'0');
+// console.log(map);
 
 
 // - створити функцію sortNums(array,direction), яка прймає масив чисел,
