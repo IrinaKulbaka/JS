@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call, apply, bind</title>
+</head>
+<body>
+<script>
+
+    // Call_____________________________________
+
+    function User(id, name){
+        this.id = id;
+        this.name = name;
+        this.greeting = function (){
+            console.log('hello my name is ' + this.name);
+        };
+    }
+
+    let user1 = new User(3,'tre');
+    console.log(user1);
+
+
+    function userFactoryFunction(id, name){
+        return{
+            id, name
+        }
+    }
+
+    let userFactoryObject= userFactoryFunction(1, 'qwe');
+    console.log(userFactoryObject);
+
+    user1.greeting.call(userFactoryObject);
+
+
+    function Users(id, name){
+        this.id = id;
+        this.name = name;
+        this.greeting = function (msg){
+            console.log(msg + ' my name is ' + this.name);
+        };
+    }
+
+    let user2 = new Users(3,'tre');
+    console.log(user2);
+
+    user2.greeting.call(userFactoryObject, 'olla');
+
+    // apply________________________________
+
+    user2.greeting.apply(userFactoryObject, ['oleg']);
+
+    // bind_________________________________
+
+    user2.greeting.bind(userFactoryObject);
+    let greetingClone = user2.greeting.bind(userFactoryObject);
+    greetingClone('good day');
+    greetingClone('good evening');
+
+    // наслідування, не використовуючи класову конструкцію_____
+    // підміна контексту без наслідування______________________
+
+    // function SuperUser(id, name, login, password){
+    //     this.id = id;
+    //     this.name = name;
+    //     this.login = login;
+    //     this.password = password;
+    // }
+
+    function SuperUser(id, name, login, password){
+        User.apply(this,[id,name]);
+        this.login = login;
+        this.password = password;
+    }
+    let superUser = new SuperUser(1,'lora','fghrtuy','dfghjk');
+    console.log(superUser);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor_Class</title>
+</head>
+<body>
+
+
+<script>
+    // фабрична функція
+    function factoryFunction(id, name){
+        return {
+            id, name
+        }
+    }
+
+    console.log(factoryFunction(1,'asd'));
+
+
+    function userFactoryFunction(id, name){
+        return{
+            id, name
+        }
+    }
+
+    function clientFactoryFunction(id, name, password){
+        return{
+            id, name, password
+        }
+    }
+
+
+    let user = userFactoryFunction(12, 'qwe');
+    let client = clientFactoryFunction(15,'zxc','fghjkl');
+
+    console.log(typeof user);
+    console.log(typeof client);
+    console.log(user);
+    console.log(client);
+
+
+    // функція конструктор
+    function User(id, name){
+        this.id = id;
+        this.name = name;
+        // this.greeting = function (){
+        //     console.log('hello my name is' + this.name);
+        // };
+
+    }
+
+    User.prototype.aaaaaa = 123;
+    User.prototype.foobar = function (){
+        console.log('barfoo');
+    }
+
+
+    let user1 = new User(3,'tre');
+    console.log(user1);
+    console.log(user1 instanceof User);
+    console.log({});
+
+
+    // Масиви
+    console.log([] instanceof Array);
+
+    let numbers = [1,2,3];
+    console.log(numbers instanceof Array);
+
+    Array.prototype.xxx = function (){
+        console.log(this);
+    };
+
+    numbers.xxx();
+
+
+    let users = [
+        {name: 'vasa', age: 31, status: false},
+        {name: 'petya', age: 30, status: true},
+        {name: 'kolya', age: 29, status: true},
+        {name: 'ola', age: 28, status: false},
+        {name: 'max', age: 30, status: true},
+        {name: 'anya', age: 31, status: false},
+        {name: 'oleg', age: 28, status: false},
+        {name: 'andrey', age: 29, status: true},
+        {name: 'masha', age: 30, status: true},
+        {name: 'ola', age: 31, status: false},
+        {name: 'max', age: 31, status: true}
+    ];
+    users.xxx();
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class, Date, Set, Map</title>
+</head>
+<body>
+
+
+
+<script>
+    // функція конструктор
+    // function Users(id, name){
+    //     this.id = id;
+    //     this.name = name;
+    //     this.greeting = function (){
+    //         console.log('hello my name is' + this.name);
+    //     };
+    //
+    // }
+    //
+    // Users.prototype.aaaaaa = 123;
+    // Users.prototype.foobar = function (){
+    //     console.log('barfoo');
+    // }
+    //
+    //
+    // let user1 = new Users(3,'tre');
+    // console.log(user1);
+    // console.log(user1 instanceof Users);
+    // console.log({});
+
+
+
+
+    class User{
+        constructor(id, name) {
+            this.id = id;
+            this.name = name;
+            // this.greeting = function(){
+            // console.log('hello mane is ' + this.name);
+        }
+        greeting(msg){
+            console.log(msg, ' my name is ', this.name);
+        }
+    }
+    let user = new User(3, 'tola', 'hello');
+    console.log(user);
+    user.greeting('hello');
+
+
+    class SuperUser extends User{
+        constructor(id, name, login, password) {
+            super(id, name);
+            this.login = login;
+            this.password = password;
+        }
+        foobar(){}
+    }
+    let superUser = new SuperUser(111, 'olla','lll','ppp');
+    console.log(superUser);
+    superUser.greeting('hello');
+
+
+    // class Date____________________________
+    let date = new Date();
+    console.log(date);
+    console.log(date.getTime());
+    console.log(date.getMonth());
+    console.log(date.getFullYear());
+    console.log(date.getTimezoneOffset());
+    console.log(date.getUTCDay());
+
+    // class Set_______________________________
+    let set = new Set();
+    console.log(set.size);
+    console.log(set.add('asd'));
+    console.log(set.keys());
+
+    set.add('qwe');
+    set.add('wer');
+    set.add('ert');
+    set.add('wsd');
+    set.add('wsd');
+    set.add({});
+    set.add({});
+    set.add([]);
+    set.add([]);
+    console.log(set);
+
+    console.log(set.has({}));
+    console.log(set.has('qwe'));
+
+    // Map___________________________
+    let map = new Map();
+    map.set('doctor',{name:'roman'});
+    map.set('petya',{name:'sasha'});
+    map.set('borya',{name:'sasha'});
+    map.set('borya',{name:'masha'});
+    console.log(map);
+
+    let entries = map.entries();
+    console.log(entries.next());
+    console.log(entries.next());
+    console.log(entries.next());
+
+    console.log(map.get('borya'));
+
+    map.values();
+    console.log(map);
+
+    map.delete('doctor');
+    console.log(map);
+
+
+
+
+
+</script>
+</body>
+</html>
