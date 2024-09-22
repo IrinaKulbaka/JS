@@ -74,29 +74,67 @@ console.log(toSorted);
 // order (поле є масивом зі списком товарів)
 // створити пустий масив, наповнити його 10 об'єктами Client
 
-function Client (id, name, surname, email, phone, order){
-    this.id = id;
-    this.name = name;
-    this.surname = surname;
-    this.email = email;
-    this.phone = phone;
-    this.order = order;
+// function Client (id, name, surname, email, phone, order){
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+//     this.order = order;
+// }
+
+class Client{
+    constructor(id, name, surname, email, phone, order) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
+    }
 }
 
-let clients = [
-    new Client(1, 'aly', 'asd', 'qwe@123', '+123456789', [{title:'tv', price:1234}, {title:'phone', price:234},{title:'clothing', price:567}]),
-    new Client(2, 'alla', 'asdqwe', 'qwe@123', '+123456788', [{title:'tv', price:1234},{title:'phone', price:234},{title:"toys", price:789},{title:'clothing', price:567}]),
-    new Client(3, 'sasha', 'njajna', 'qwe@123', '+123456787', [{title:'phone', price:234}]),
-    new Client(4, 'masha', 'tkgknb', 'qwe@123', '+123456786', [{title:'tv', price:1234},{title:'phone', price:234}]),
-    new Client(5, 'nikol', 'pkljnkef', 'qwe@123', '+123456785', [{title:'tv', price:1234},{title:'phone', price:234},{title:'tv', price:1234},{title:'phone', price:234},{title:'clothing', price:567}]),
-    new Client(6, 'petr', 'pqlslkd', 'qwe@123', '+123456784', [{title:'tv', price:1234},{title:'phone', price:234}]),
-    new Client(7, 'pavel', 'jfbsa', 'qwe@123', '+123456783', [{title:'tv', price:1234},{title:'phone', price:234}]),
-    new Client(8, 'ola', 'asdasd', 'qwe@123', '+123456782', [{title:'tv', price:1234},{title:'phone', price:234},{title:'phone', price:234},{title:"toys", price:789}]),
-    new Client(9, 'iryna', 'asddsa', 'qwe@123', '+123456781', [{title:'tv', price:1234},{title:'phone', price:234}]),
-    new Client(10, 'maxim', 'asdhello', 'qwe@123', '+123456780', [{title:'tv', price:1234},{title:'phone', price:234},{title:'clothing', price:567}]),
-
+let array = [
+    new Client(1, 'aly', 'asd', 'qwe@123', '+123456789', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }, {title: 'clothing', price: 567}]),
+    new Client(2, 'alla', 'asdqwe', 'qwe@123', '+123456788', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }, {title: "toys", price: 789}, {title: 'clothing', price: 567}]),
+    new Client(3, 'sasha', 'njajna', 'qwe@123', '+123456787', [{title: 'phone', price: 234}]),
+    new Client(4, 'masha', 'tkgknb', 'qwe@123', '+123456786', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }]),
+    new Client(5, 'nikol', 'pkljnkef', 'qwe@123', '+123456785', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }, {title: 'tv', price: 1234}, {title: 'phone', price: 234}, {title: 'clothing', price: 567}]),
+    new Client(6, 'petr', 'pqlslkd', 'qwe@123', '+123456784', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }]),
+    new Client(7, 'pavel', 'jfbsa', 'qwe@123', '+123456783', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }]),
+    new Client(8, 'ola', 'asdasd', 'qwe@123', '+123456782', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }, {title: 'phone', price: 234}, {title: "toys", price: 789}]),
+    new Client(9, 'iryna', 'asddsa', 'qwe@123', '+123456781', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }]),
+    new Client(10, 'maxim', 'asdhello', 'qwe@123', '+123456780', [{title: 'tv', price: 1234}, {
+        title: 'phone',
+        price: 234
+    }, {title: 'clothing', price: 567}])
 ];
-console.log(clients);
+
+console.log(array);
 
 
 // - Взяти масив (Client [] з попереднього завдання).
