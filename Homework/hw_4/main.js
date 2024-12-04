@@ -14,7 +14,7 @@ function circle (r){
     let c = Math.PI * r * r;
     return c;
 }
-let result2 =circle(12);
+let result2 =circle(2);
 console.log(result2);
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events, localStorage,sessionStorage, cookies </title>
+
+    <style>
+        .target-1{
+            width: 300px;
+            height: 300px;
+            background: black;
+            transition: 300ms;
+        }
+
+        .target-2{
+            width: 300px;
+            height: 300px;
+            background: #0f7776;
+            transition: 3s;
+        }
+
+        .popup{
+            display: block;
+            width: 400px;
+            height: 100px;
+            position: fixed;
+            left: -999px;
+            top: -999px;
+            background: silver;
+            text-align: center;
+            padding-top: 100px;
+            transition: 3s;
+        }
+
+        .show{
+            display: block;
+            left: 300px;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="target-1"></div>
+
+<div class="target-2"></div>
+
+<form name = "form1">
+    <input type="text" name = "username">
+    <input type="text" name = "password">
+    <button>save</button>
+</form>
+
+<!--<div class="popup">-->
+<!--    HELLO-->
+<!--</div>-->
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

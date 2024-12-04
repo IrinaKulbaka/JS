@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SessionsListPage</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 600px;
+            background-color: #7dc3c2;
+        }
+    </style>
+</head>
+<body>
+
+<div class ="asd"></div>
+<div class =" box2 asd"></div>
+<div class ="box box1 box2 asd"></div>
+<script>
+    const sessionsList = JSON.parse(localStorage.getItem('sessionsList')) || [];
+    // iter + DOM
+    for (const sessionsListElement of sessionsList){
+        const div = document.createElement('div');
+        // div.style.backgroundColor = 'red';
+        div.innerText = sessionsListElement.toString();
+        // document.body.appendChild(div);
+        document.getElementsByClassName('box')[0].appendChild(div);
+        // document.querySelectorAll('.box,.box1,.box2.asd')[0].appendChild(div);
+    }
+</script>
+<!--<script src="main.js"></script>-->
+</body>
+</html>
+
+<!--// в сешинслист вже все записано, запускаємо ітерацію:-->
+<!--// let sessionsList = JSON.parse(localStorage.getItem('sessionsList')) || [];-->
+<!--// // iter + DOM-->
+<!--// for (let sessionsListElement of sessionsList){-->
+<!--//     let div = document.createElement('div');-->
+<!--//     div.innerText = sessionsListElement.toString();-->
+<!--//     document.body.appendChild(div);-->
+<!--// }-->
