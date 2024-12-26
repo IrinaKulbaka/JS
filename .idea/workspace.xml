@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="202b8b16-e5e3-48f5-987b-e1677862b6be" name="Changes" comment="add lesson2">
-      <change afterPath="$PROJECT_DIR$/Homework/hw_2_2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/hw_2_2/main.js" afterDir="false" />
+    <list default="true" id="202b8b16-e5e3-48f5-987b-e1677862b6be" name="Changes" comment="add hw2_2">
+      <change afterPath="$PROJECT_DIR$/Homework/hw_3_2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/hw_3_2/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson/lesson_3_loops/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson/lesson_3_loops/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/lesson2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/lesson2/main.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +164,15 @@
       <workItem from="1734104861122" duration="8646000" />
       <workItem from="1734422511804" duration="13648000" />
       <workItem from="1734537603381" duration="5677000" />
-      <workItem from="1734607298464" duration="9169000" />
+      <workItem from="1734607298464" duration="9666000" />
+      <workItem from="1734719429993" duration="2604000" />
+      <workItem from="1734790823253" duration="8424000" />
+      <workItem from="1734890579204" duration="5770000" />
+      <workItem from="1734954369483" duration="811000" />
+      <workItem from="1735061173610" duration="4501000" />
+      <workItem from="1735135230081" duration="6026000" />
+      <workItem from="1735199279425" duration="5107000" />
+      <workItem from="1735228783854" duration="12078000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -326,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734121594143</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add hw2_2">
+      <option name="closed" value="true" />
+      <created>1734629609085</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1734629609085</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +352,7 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="add lessons" />
     <MESSAGE value="add lesson2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lesson2" />
+    <MESSAGE value="add hw2_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hw2_2" />
   </component>
 </project>
