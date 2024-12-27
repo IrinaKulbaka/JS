@@ -152,7 +152,7 @@ let users2 = [
 
 let arrTrue =[];
 let arrFalse = [];
-// let arrAge = [];
+let arrAge = [];
 
 let i = 0;
 while(i < users2.length){
@@ -169,7 +169,9 @@ console.log(arrFalse);
 
 for (const user of users2) {
     if (user.age > 30) {
-        console.log(user);
+        // console.log(user);
+        arrAge[arrAge.length] = user
     }
 }
+console.log(arrAge);
 
